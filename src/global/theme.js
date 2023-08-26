@@ -14,9 +14,7 @@ export const theme = createTheme({
   },
   typography: {
     headingText: {
-      fontSize: '3.125rem',
-      fontWeight: 600,
-      lineHeight: '4rem',
+      
     },
     fontFamily: {
       inter: `"Inter", sans-serif`,

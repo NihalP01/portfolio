@@ -12,7 +12,10 @@ export const ButtonBox = styled(Box)(() => ({
   marginTop: '4rem',
 }));
 
-export const AvatarBox = styled(Box)({});
+export const AvatarBox = styled(Box)({
+  justifyContent: 'center',
+  alignItems: 'center',
+});
 
 export const CircleBoxOne = styled(Box)({
   background: '#d7f5ff',
