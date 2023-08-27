@@ -3,10 +3,11 @@ import { Box, styled } from '@mui/material';
 export const BoxWrapper = styled(Box)(({ theme }) => ({
   display: 'flex',
   width: '100%',
-  marginTop: '8rem',
+  paddingTop: '8rem',
   [theme.breakpoints.down('lg')]: {
-    marginTop: '5.5rem',
+    paddingTop: '5.5rem',
   },
+  background: theme.palette.background.paper,
 }));
 
 export const ButtonBox = styled(Box)(() => ({
@@ -30,4 +31,3 @@ export const CircleBoxOne = styled(Box)({
   boxShadow: '0 0 62px #36a3ff',
   zIndex: 0,
 });
-

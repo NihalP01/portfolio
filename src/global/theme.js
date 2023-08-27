@@ -1,6 +1,13 @@
 import { createTheme } from '@mui/material';
 
 export const theme = createTheme({
+  palette: {
+    mode: 'dark',
+    background: {
+      default: '#181a1b',
+      paper: '#181a1b',
+    },
+  },
   breakpoints: {
     values: {
       xs: 0,
