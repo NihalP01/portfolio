@@ -13,7 +13,10 @@ export const theme = createTheme({
     },
   },
   typography: {
-    headingText: {},
+    subBody: {
+      fontSize: '.875rem',
+      lineHeight: '1.25rem',
+    },
     fontFamily: {
       inter: `"Inter", sans-serif`,
     },
