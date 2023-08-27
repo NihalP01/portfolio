@@ -13,11 +13,32 @@ export const theme = createTheme({
     },
   },
   typography: {
-    headingText: {
-      
-    },
+    headingText: {},
     fontFamily: {
       inter: `"Inter", sans-serif`,
     },
   },
 });
+
+theme.typography.body1 = {
+  fontSize: '1.125rem',
+  lineHeight: '1.75rem',
+  [theme.breakpoints.down('md')]: {
+    fontSize: '1rem',
+    lineHeight: '1.5rem',
+  },
+};
+
+theme.typography.h1 = {
+  fontSize: '2.25rem',
+  lineHeight: '2.7rem',
+  fontWeight: 600,
+  [theme.breakpoints.up('md')]: {
+    fontSize: '3rem',
+    lineHeight: '3.35rem',
+  },
+  [theme.breakpoints.up('xl')]: {
+    fontSize: '3.5rem',
+    lineHeight: '4rem',
+  },
+};
