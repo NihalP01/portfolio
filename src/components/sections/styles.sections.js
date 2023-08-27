@@ -1,9 +1,12 @@
 import { Box, styled } from '@mui/material';
 
-export const BoxWrapper = styled(Box)(() => ({
+export const BoxWrapper = styled(Box)(({ theme }) => ({
   display: 'flex',
   width: '100%',
   marginTop: '8rem',
+  [theme.breakpoints.down('lg')]: {
+    marginTop: '5.5rem',
+  },
 }));
 
 export const ButtonBox = styled(Box)(() => ({
@@ -18,11 +21,13 @@ export const AvatarBox = styled(Box)({
 });
 
 export const CircleBoxOne = styled(Box)({
-  background: '#d7f5ff',
+  background: '#91e3ff',
   position: 'absolute',
-  padding: '10rem',
+  padding: '8rem',
   top: '30%',
-  left: '63%',
+  left: '66%',
   borderRadius: '10rem',
+  boxShadow: '0 0 62px #36a3ff',
   zIndex: 0,
 });
+

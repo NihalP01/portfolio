@@ -32,13 +32,16 @@ const HeroSection = () => {
         >
           <Box width={'100%'} maxWidth={530}>
             <Controls.BaseTypography
-              // fontSize={'3.125rem'}
-              // fontWeight={600}
-              // lineHeight={'4rem'}
               variant="h1"
               textalign={isSmallScreen ? 'center' : 'start'}
               text={heroConstants.heading}
               mt={isSmallScreen ? '2rem' : 0}
+              sx={{
+                background:
+                  '-webkit-linear-gradient(45deg, #4999a0 30%, #a42fb2 90%)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+              }}
             />
             <Controls.BaseTypography
               mt={3}
