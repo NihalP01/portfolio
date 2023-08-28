@@ -7,6 +7,7 @@ const Home = () => {
     <Layout>
       <Sections.HeroSection />
       <Sections.ProjectSection />
+      <Sections.FreelancingSection />
     </Layout>
   );
 };

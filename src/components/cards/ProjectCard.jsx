@@ -4,10 +4,13 @@ import { Box, Grid, useMediaQuery } from '@mui/material';
 import { BoxWrapper } from './projectCard.styles';
 
 const ProjectCard = (props) => {
-  const { title, subTitle, imgUrl, hasPreview } = props;
+  const { title, subTitle, imgUrl, hasPreview, shadowColor } = props;
   const isSmallScreen = useMediaQuery('(max-width: 768px)');
   return (
-    <BoxWrapper height={isSmallScreen ? 'auto' : '440px'}>
+    <BoxWrapper
+      height={isSmallScreen ? 'auto' : '440px'}
+      sx={{ boxShadow: `0px 0px 6px 0px ${shadowColor}` }}
+    >
       <Box sx={{ display: 'flex', justifyContent: 'center' }}>
         <img
           src={imgUrl}

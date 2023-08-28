@@ -3,30 +3,31 @@ import { BoxWrapper } from './styles.sections';
 import { Controls } from '../controls';
 import { Components } from '..';
 import { Grid } from '@mui/material';
-import { cardData } from '../../constants/projectSectionConstants';
 import { Cards } from '../cards';
+import { freelancingData } from '../../constants/freelancingConstants';
 
-const ProjectSection = () => {
+const FreelancingSection = () => {
   return (
     <BoxWrapper
+      paddingtop={'4rem'}
       paddingtopmob="2rem"
       sx={{ px: '2rem', display: 'flex', flexDirection: 'column' }}
     >
       <Controls.BaseTypography
-        text="Projects"
+        text="Freelancing"
         fontSize={'1.5rem'}
         fontWeight={600}
       />
-      <Components.HorizontalDivider />
-      <Grid container spacing={3} mt={2}>
-        {cardData.map((item) => (
-          <Grid item xs={12} md={6} lg={4} key={item.id}>
-            <Cards.ProjectCard
+      <Components.HorizontalDivider
+        linecolor="#00ff66"
+        width={'110px'}
+      />
+      <Grid container spacing={10}>
+        {freelancingData.map((item) => (
+          <Grid item key={item.id}>
+            <Cards.FreelancingCard
               title={item.title}
               subTitle={item.subTitle}
-              imgUrl={item.imgUrl}
-              hasPreview={item.hasPreview}
-              shadowColor={item.shadowColor}
             />
           </Grid>
         ))}
@@ -35,4 +36,4 @@ const ProjectSection = () => {
   );
 };
 
-export default ProjectSection;
+export default FreelancingSection;
