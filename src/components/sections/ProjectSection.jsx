@@ -19,11 +19,12 @@ const ProjectSection = () => {
       <Components.HorizontalDivider />
       <Grid container spacing={2} mt={2}>
         {cardData.map((item) => (
-          <Grid item xs={4} key={item.id}>
+          <Grid item xs={12} md={6} lg={4} key={item.id}>
             <Components.ProjectCard
               title={item.title}
               subTitle={item.subTitle}
               imgUrl={item.imgUrl}
+              hasPreview={item.hasPreview}
             />
           </Grid>
         ))}
