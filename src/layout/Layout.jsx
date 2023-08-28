@@ -1,11 +1,11 @@
 import React from 'react';
 import { LayoutContainer } from './layout.styles';
-import { Sections } from '../components';
+import { Components } from '../components';
 
 const Layout = ({ children }) => {
   return (
     <LayoutContainer>
-      <Sections.Header />
+      <Components.Header />
       {children}
     </LayoutContainer>
   );

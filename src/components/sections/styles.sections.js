@@ -1,14 +1,17 @@
 import { Box, styled } from '@mui/material';
 
-export const BoxWrapper = styled(Box)(({ theme }) => ({
-  display: 'flex',
-  width: '100%',
-  paddingTop: '8rem',
-  [theme.breakpoints.down('lg')]: {
-    paddingTop: '5.5rem',
-  },
-  background: theme.palette.background.paper,
-}));
+export const BoxWrapper = styled(Box)(
+  ({ theme, paddingtop, paddingtopMob }) => ({
+    display: 'flex',
+    width: '100%',
+    
+    paddingTop: paddingtop ? paddingtop : '8rem',
+    [theme.breakpoints.down('lg')]: {
+      paddingTop: paddingtopMob ? paddingtopMob : '5.5rem',
+    },
+    background: theme.palette.background.paper,
+  })
+);
 
 export const ButtonBox = styled(Box)(() => ({
   display: 'flex',

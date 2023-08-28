@@ -1,7 +1,8 @@
-import Header from './header/Header';
-import HeroSection from './sections/HeroSection';
 
-export const Sections = {
-  HeroSection,
-  Header
+import ProjectCard from './cards/ProjectCard';
+import Header from './header/Header';
+
+export const Components = {
+  Header,
+  ProjectCard,
 };
