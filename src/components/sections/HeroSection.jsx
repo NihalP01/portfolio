@@ -60,6 +60,7 @@ const HeroSection = () => {
               src={`${process.env.PUBLIC_URL}/assets/images/profile.jpg`}
               height={isSmallScreen ? 200 : 300}
               style={{
+                boxShadow: '2px 3px 20px 5px black',
                 borderRadius: '10rem',
                 zIndex: 1,
                 position: 'relative',
