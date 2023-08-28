@@ -32,16 +32,20 @@ const HeroSection = () => {
         >
           <Box width={'100%'} maxWidth={530}>
             <Controls.BaseTypography
-              fontSize={'3.125rem'}
-              fontWeight={600}
-              lineHeight={'4rem'}
+              variant="h1"
               textalign={isSmallScreen ? 'center' : 'start'}
               text={heroConstants.heading}
               mt={isSmallScreen ? '2rem' : 0}
+              sx={{
+                background:
+                  '-webkit-linear-gradient(45deg, #4999a0 30%, #a42fb2 90%)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+              }}
             />
             <Controls.BaseTypography
-              mt={4}
-              fontSize={'1.1rem'}
+              mt={3}
+              variant={'body1'}
               textalign={isSmallScreen ? 'center' : 'start'}
               text={heroConstants.subHeading}
             />
@@ -54,8 +58,9 @@ const HeroSection = () => {
           <AvatarBox display={isSmallScreen ? 'flex' : 'block'}>
             <img
               src={`${process.env.PUBLIC_URL}/assets/images/profile.jpg`}
-              height={300}
+              height={isSmallScreen ? 200 : 300}
               style={{
+                boxShadow: '2px 3px 20px 5px black',
                 borderRadius: '10rem',
                 zIndex: 1,
                 position: 'relative',

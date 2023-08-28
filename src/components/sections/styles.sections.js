@@ -1,10 +1,17 @@
 import { Box, styled } from '@mui/material';
 
-export const BoxWrapper = styled(Box)(() => ({
-  display: 'flex',
-  width: '100%',
-  marginTop: '3rem',
-}));
+export const BoxWrapper = styled(Box)(
+  ({ theme, paddingtop, paddingtopmob }) => ({
+    display: 'flex',
+    width: '100%',
+
+    paddingTop: paddingtop ? paddingtop : '8rem',
+    [theme.breakpoints.down('lg')]: {
+      paddingTop: paddingtopmob ? paddingtopmob : '5.5rem',
+    },
+    background: theme.palette.background.paper,
+  })
+);
 
 export const ButtonBox = styled(Box)(() => ({
   display: 'flex',
@@ -18,11 +25,12 @@ export const AvatarBox = styled(Box)({
 });
 
 export const CircleBoxOne = styled(Box)({
-  background: '#d7f5ff',
+  background: '#91e3ff',
   position: 'absolute',
-  padding: '10rem',
-  top: '20%',
-  left: '63%',
+  padding: '8rem',
+  top: '30%',
+  left: '66%',
   borderRadius: '10rem',
+  boxShadow: '0 0 62px #36a3ff',
   zIndex: 0,
 });
