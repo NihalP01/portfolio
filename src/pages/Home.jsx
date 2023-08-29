@@ -8,6 +8,8 @@ const Home = () => {
       <Sections.HeroSection />
       <Sections.ProjectSection />
       <Sections.FreelancingSection />
+      <Sections.Skills />
+      <Sections.AboutMe />
     </Layout>
   );
 };

@@ -7,9 +7,12 @@ const FreelancingCard = (props) => {
   const { title, subTitle } = props;
   return (
     <BoxWrapper
-      cardPadding={'1rem'}
-      sx={{ border: '1px solid white' }}
-      borderRad={'0.3rem'}
+      cardpadding={'1rem'}
+      sx={{
+        border: '1px solid #9ff1ff',
+        boxShadow: '4px 4px 6px 2px #000000',
+      }}
+      borderrad={'0.3rem'}
     >
       <Controls.BaseTypography
         fontSize={'1.2rem'}
