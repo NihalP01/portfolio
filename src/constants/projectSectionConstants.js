@@ -6,6 +6,7 @@ export const cardData = [
       'Employee management system with attendance tracker for daily based attendance. Automatic salary calculation according to daily attendance records.',
     imgUrl: `${process.env.PUBLIC_URL}/assets/images/empAttendance.png`,
     hasPreview: true,
+    shadowColor: '#ffb2b2',
   },
   {
     id: 1,
@@ -13,6 +14,7 @@ export const cardData = [
     subTitle: 'Online currency converter with precious metal prices',
     imgUrl: `${process.env.PUBLIC_URL}/assets/images/empAttendance.png`,
     hasPreview: false,
+    shadowColor: '#f3b2ff',
   },
   {
     id: 2,
@@ -20,6 +22,7 @@ export const cardData = [
     subTitle: 'My personal portfolio in React',
     imgUrl: `${process.env.PUBLIC_URL}/assets/images/empAttendance.png`,
     hasPreview: true,
+    shadowColor: '#b2ffc3',
   },
   {
     id: 3,
@@ -27,5 +30,6 @@ export const cardData = [
     subTitle: 'Weather web application in React and tailwind css',
     imgUrl: `${process.env.PUBLIC_URL}/assets/images/empAttendance.png`,
     hasPreview: true,
+    shadowColor: '#fffda6',
   },
 ];

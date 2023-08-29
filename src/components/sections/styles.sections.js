@@ -4,7 +4,6 @@ export const BoxWrapper = styled(Box)(
   ({ theme, paddingtop, paddingtopmob }) => ({
     display: 'flex',
     width: '100%',
-
     paddingTop: paddingtop ? paddingtop : '8rem',
     [theme.breakpoints.down('lg')]: {
       paddingTop: paddingtopmob ? paddingtopmob : '5.5rem',
@@ -13,10 +12,10 @@ export const BoxWrapper = styled(Box)(
   })
 );
 
-export const ButtonBox = styled(Box)(() => ({
+export const ButtonBox = styled(Box)(({ margintop }) => ({
   display: 'flex',
   justifyContent: 'start',
-  marginTop: '4rem',
+  marginTop: margintop ? margintop : '4rem',
 }));
 
 export const AvatarBox = styled(Box)({

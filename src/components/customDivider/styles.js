@@ -6,6 +6,6 @@ export const CustomBox = styled(Box)(
     margin: margin ? margin : '4px 0 0 0',
     height: height ? height : '4px',
     width: width ? width : '70px',
-    borderRadius: '0.2rem',
+    borderRadius: '0.4rem',
   })
 );

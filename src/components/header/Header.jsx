@@ -6,15 +6,23 @@ import {
   HeaderMain,
 } from './header.styles';
 import { Controls } from '../controls';
-import { links } from '../../constants/headerConstants';
+import { headerHome, links } from '../../constants/headerConstants';
 
 const Header = () => {
   const isSmallScreen = useMediaQuery('(max-width: 1024px)');
+
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <HeaderMain>
       <AppBarMain component="nav" elevation={0}>
         <Toolbar sx={{ justifyContent: 'space-between' }}>
-          <Controls.BaseTypography text="Portfolio" />
+          <Controls.BaseTypography text={headerHome.name} />
           {!isSmallScreen && (
             <CustomHeaderBox>
               {links.map((link) => (
@@ -23,6 +31,7 @@ const Header = () => {
                   variant="subBody"
                   key={link.id}
                   text={link.value}
+                  onClick={() => scrollToSection(link.sectionId)}
                 />
               ))}
             </CustomHeaderBox>
