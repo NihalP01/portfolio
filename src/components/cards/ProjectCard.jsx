@@ -1,7 +1,7 @@
 import React from 'react';
 import { Controls } from '../controls';
 import { Box, Grid, useMediaQuery } from '@mui/material';
-import { BoxWrapper } from './projectCard.styles';
+import { BoxWrapper } from './cards.styles';
 
 const ProjectCard = (props) => {
   const { title, subTitle, imgUrl, hasPreview, shadowColor } = props;
@@ -43,12 +43,18 @@ const ProjectCard = (props) => {
       >
         {hasPreview && (
           <Grid item>
-            <Controls.BaseButton text="Live preview" />
+            <Controls.BaseButton
+              btnPadding="0.7rem"
+              text="Live preview"
+            />
           </Grid>
         )}
 
         <Grid item>
-          <Controls.BaseButton text="Check on github" />
+          <Controls.BaseButton
+            btnPadding="0.7rem"
+            text="Check on github"
+          />
         </Grid>
       </Grid>
       {/* <Box
