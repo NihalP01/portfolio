@@ -66,7 +66,7 @@ const ProjectCard = (props) => {
         <Grid item>
           <Controls.BaseButton
             btnPadding="0.7rem"
-            text="Check on github"
+            text="Source code"
           />
         </Grid>
       </Grid>

@@ -13,7 +13,7 @@ const Skills = () => {
       paddingtop={'4rem'}
       paddingtopmob="2rem"
       sx={{ px: '2rem', display: 'flex', flexDirection: 'column' }}
-      id='3'
+      id="3"
     >
       <Controls.BaseTypography
         text="Skills"
@@ -21,13 +21,13 @@ const Skills = () => {
         fontWeight={600}
       />
       <Components.HorizontalDivider
-        linecolor="#ff4929"
+        linecolor="linear-gradient(45deg, #ff4929, transparent)"
         margin={isSmallScreen ? '0.5 0 0 0' : ''}
         width={isSmallScreen ? '30px' : '45px'}
       />
       <Grid container spacing={3}>
         {SkillsData.map((item) => (
-          <Grid item key={item.id}  md={4} lg={3}>
+          <Grid item key={item.id} md={4} lg={3}>
             <Cards.SkillsCard
               icon={item.icon}
               title={item.title}

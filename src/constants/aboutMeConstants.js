@@ -8,7 +8,7 @@ export const aboutMe = [
   {
     id: 1,
     title: '2019',
-    subTitle: 'Began my Btech degree in CSE with great enthusiasm',
+    subTitle: 'Began my BTech degree in CSE with great enthusiasm',
   },
   {
     id: 2,
@@ -32,6 +32,6 @@ export const aboutMe = [
     id: 3,
     title: '2023',
     subTitle:
-      'Completed my Btech degree in CSE, continuing to learn and explore my developer journey',
+      'Completed my BTech degree in CSE, continuing to learn and explore my developer journey',
   },
 ];
