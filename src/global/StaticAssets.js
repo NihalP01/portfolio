@@ -9,6 +9,13 @@ import {
   DiJava,
 } from 'react-icons/di';
 
+import {
+  FaLinkedin,
+  FaGithubSquare,
+  FaFacebookSquare,
+  FaInstagramSquare,
+} from 'react-icons/fa';
+
 import { SiMui } from 'react-icons/si';
 
 const [
@@ -21,6 +28,10 @@ const [
   ANDROID_ICON,
   GIT_ICON,
   JAVA_ICON,
+  LINKEDIN_ICON,
+  GITHUB_ICON,
+  FB_ICON,
+  IG_ICON,
 ] = [
   DiReact,
   DiJavascript1,
@@ -31,6 +42,10 @@ const [
   DiAndroid,
   DiGit,
   DiJava,
+  FaLinkedin,
+  FaGithubSquare,
+  FaFacebookSquare,
+  FaInstagramSquare,
 ];
 
 export const STATIC_ASSETS = {
@@ -43,4 +58,8 @@ export const STATIC_ASSETS = {
   ANDROID_ICON,
   GIT_ICON,
   JAVA_ICON,
+  LINKEDIN_ICON,
+  GITHUB_ICON,
+  FB_ICON,
+  IG_ICON,
 };

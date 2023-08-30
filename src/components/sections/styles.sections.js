@@ -9,6 +9,7 @@ export const BoxWrapper = styled(Box)(
       paddingTop: paddingtopmob ? paddingtopmob : '5.5rem',
     },
     background: theme.palette.background.paper,
+    paddingBottom: '4rem',
   })
 );
 

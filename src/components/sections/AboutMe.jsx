@@ -20,7 +20,7 @@ const AboutMe = () => {
         fontWeight={600}
       />
       <Components.HorizontalDivider
-        linecolor="#fb1dff"
+        linecolor="linear-gradient(45deg, #fb1dff, transparent)"
         margin={isSmallScreen ? '0.5 0 0 0' : ''}
         width={isSmallScreen ? '55px' : '100px'}
       />

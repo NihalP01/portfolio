@@ -7,6 +7,7 @@ const Layout = ({ children }) => {
     <LayoutContainer>
       <Components.Header />
       {children}
+      <Components.Footer />
     </LayoutContainer>
   );
 };

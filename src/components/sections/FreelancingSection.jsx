@@ -21,7 +21,8 @@ const FreelancingSection = () => {
         fontWeight={600}
       />
       <Components.HorizontalDivider
-        linecolor="#00ff66"
+        // linecolor="#00ff66"
+        linecolor='linear-gradient(45deg, #0088ff, transparent)'
         margin={isSmallScreen ? '0.5 0 0 0' : ''}
         width={isSmallScreen ? '70px' : '130px'}
       />
