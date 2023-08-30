@@ -6,6 +6,7 @@ import {
   DiBootstrap,
   DiAndroid,
   DiGit,
+  DiJava,
 } from 'react-icons/di';
 
 import { SiMui } from 'react-icons/si';
@@ -19,6 +20,7 @@ const [
   BOOTSTRAP_ICON,
   ANDROID_ICON,
   GIT_ICON,
+  JAVA_ICON,
 ] = [
   DiReact,
   DiJavascript1,
@@ -28,6 +30,7 @@ const [
   DiBootstrap,
   DiAndroid,
   DiGit,
+  DiJava,
 ];
 
 export const STATIC_ASSETS = {
@@ -39,4 +42,5 @@ export const STATIC_ASSETS = {
   BOOTSTRAP_ICON,
   ANDROID_ICON,
   GIT_ICON,
+  JAVA_ICON,
 };

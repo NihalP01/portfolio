@@ -39,9 +39,9 @@ export const SkillsData = [
   },
   {
     id: 6,
-    icon: STATIC_ASSETS.ANDROID_ICON,
-    title: 'Android',
-    subTitle: 'Developing Android apps',
+    icon: STATIC_ASSETS.JAVA_ICON,
+    title: 'Java',
+    subTitle: 'Basics of Java and swing UI',
   },
   {
     id: 7,

@@ -12,7 +12,7 @@ const ProjectSection = () => {
     <BoxWrapper
       paddingtopmob="2rem"
       sx={{ px: '2rem', display: 'flex', flexDirection: 'column' }}
-      id='1'
+      id="1"
     >
       <Controls.BaseTypography
         text="Projects"
@@ -32,6 +32,7 @@ const ProjectSection = () => {
               imgUrl={item.imgUrl}
               hasPreview={item.hasPreview}
               shadowColor={item.shadowColor}
+              // chipLabel={item.techStack}
             />
           </Grid>
         ))}
