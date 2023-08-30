@@ -7,6 +7,20 @@ export const cardData = [
     imgUrl: `${process.env.PUBLIC_URL}/assets/images/empAttendance.png`,
     hasPreview: true,
     shadowColor: '#ffb2b2',
+    techStack: [
+      {
+        id: 0,
+        label: 'React',
+      },
+      {
+        id: 1,
+        label: 'JavaScript',
+      },
+      {
+        id: 2,
+        label: 'MUI',
+      },
+    ],
   },
   {
     id: 1,
@@ -15,6 +29,16 @@ export const cardData = [
     imgUrl: `${process.env.PUBLIC_URL}/assets/images/empAttendance.png`,
     hasPreview: false,
     shadowColor: '#f3b2ff',
+    techStack: [
+      {
+        id: 0,
+        label: 'Java',
+      },
+      {
+        id: 1,
+        label: 'Swing UI',
+      },
+    ],
   },
   {
     id: 2,
@@ -23,6 +47,20 @@ export const cardData = [
     imgUrl: `${process.env.PUBLIC_URL}/assets/images/empAttendance.png`,
     hasPreview: true,
     shadowColor: '#b2ffc3',
+    techStack: [
+      {
+        id: 0,
+        label: 'React',
+      },
+      {
+        id: 1,
+        label: 'JavaScript',
+      },
+      {
+        id: 2,
+        label: 'MUI',
+      },
+    ],
   },
   {
     id: 3,
@@ -31,5 +69,42 @@ export const cardData = [
     imgUrl: `${process.env.PUBLIC_URL}/assets/images/empAttendance.png`,
     hasPreview: true,
     shadowColor: '#fffda6',
+    techStack: [
+      {
+        id: 0,
+        label: 'React',
+      },
+      {
+        id: 1,
+        label: 'JavaScript',
+      },
+      {
+        id: 2,
+        label: 'Redux',
+      },
+      {
+        id: 3,
+        label: 'Tailwind',
+      },
+    ],
+  },
+  {
+    id: 4,
+    title: 'Daily based attendance system',
+    subTitle:
+      'Application to show the implementation of daily based attendance system for employees',
+    imgUrl: `${process.env.PUBLIC_URL}/assets/images/empAttendance.png`,
+    hasPreview: true,
+    shadowColor: '#fffda6',
+    techStack: [
+      {
+        id: 0,
+        label: 'React',
+      },
+      {
+        id: 1,
+        label: 'JavaScript',
+      },
+    ],
   },
 ];

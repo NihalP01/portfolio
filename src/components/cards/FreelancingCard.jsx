@@ -9,7 +9,7 @@ const FreelancingCard = (props) => {
     <BoxWrapper
       cardpadding={'1rem'}
       sx={{
-        border: '1px solid #9ff1ff',
+        border: '1px solid #9fffb2',
         boxShadow: '4px 4px 6px 2px #000000',
       }}
       borderrad={'0.3rem'}
