@@ -22,7 +22,11 @@ const Header = () => {
     <HeaderMain>
       <AppBarMain component="nav" elevation={0}>
         <Toolbar sx={{ justifyContent: 'space-between' }}>
-          <Controls.BaseTypography text={headerHome.name} />
+          <Controls.BaseTypography
+            text={headerHome.name}
+            sx={{cursor: 'pointer'}}
+            onClick={() => scrollToSection(0)}
+          />
           {!isSmallScreen && (
             <CustomHeaderBox>
               {links.map((link) => (

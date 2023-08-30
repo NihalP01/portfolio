@@ -13,7 +13,7 @@ const HeroSection = () => {
   const isSmallScreen = useMediaQuery('(max-width: 1024px)');
 
   return (
-    <BoxWrapper>
+    <BoxWrapper id='0'>
       <Grid
         container
         sx={{ display: 'flex', justifyContent: 'center' }}
