@@ -23,13 +23,13 @@ export const aboutMe = [
       'Dived into React for web application development and completed some small projects',
   },
   {
-    id: 3,
+    id: 4,
     title: '2022',
     subTitle:
       'Started freelancing as a web developer and loved every moment of it',
   },
   {
-    id: 3,
+    id: 5,
     title: '2023',
     subTitle:
       'Completed my BTech degree in CSE, continuing to learn and explore my developer journey',

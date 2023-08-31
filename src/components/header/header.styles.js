@@ -1,11 +1,11 @@
-import { AppBar, Box, styled } from '@mui/material';
+import { AppBar, Box, Drawer, styled } from '@mui/material';
 
 export const HeaderMain = styled(Box)(({ theme }) => ({
   '& .MuiToolbar-root': {
     zIndex: '1 !important',
     margin: '0 auto',
     width: '100%',
-    
+
     maxWidth: '640px',
     [theme.breakpoints.up('sm')]: {
       maxWidth: '100%',
@@ -31,7 +31,6 @@ export const AppBarMain = styled(AppBar)(({ theme }) => ({
   width: '100%',
   // padding: '0rem 4rem',
   justifyContent: 'space-between',
-
 }));
 
 export const CustomHeaderBox = styled(Box)({
@@ -39,4 +38,17 @@ export const CustomHeaderBox = styled(Box)({
   justifyContent: 'space-between',
   width: '100%',
   maxWidth: 480,
+});
+
+export const CustomDrawer = styled(Drawer)(({ theme }) => ({
+  '&.MuiDrawer-root': {
+    // background: "red",
+    backdropFilter: 'blur(3px)',
+    backgroundColor: 'rgba(0,0,30,0.4)',
+  },
+}));
+
+export const DrawerBox = styled(Box)({
+  padding: '2rem 2rem',
+  display: 'flex',
 });

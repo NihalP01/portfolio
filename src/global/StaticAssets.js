@@ -10,6 +10,12 @@ import {
 } from 'react-icons/di';
 
 import {
+  AiOutlineMenu,
+  AiOutlineClose,
+  AiOutlineHome,
+} from 'react-icons/ai';
+
+import {
   FaLinkedin,
   FaGithubSquare,
   FaFacebookSquare,
@@ -32,6 +38,9 @@ const [
   GITHUB_ICON,
   FB_ICON,
   IG_ICON,
+  MENU_ICON,
+  CLOSE_ICON,
+  HOME_ICON
 ] = [
   DiReact,
   DiJavascript1,
@@ -46,6 +55,9 @@ const [
   FaGithubSquare,
   FaFacebookSquare,
   FaInstagramSquare,
+  AiOutlineMenu,
+  AiOutlineClose,
+  AiOutlineHome,
 ];
 
 export const STATIC_ASSETS = {
@@ -62,4 +74,7 @@ export const STATIC_ASSETS = {
   GITHUB_ICON,
   FB_ICON,
   IG_ICON,
+  MENU_ICON,
+  CLOSE_ICON,
+  HOME_ICON
 };
