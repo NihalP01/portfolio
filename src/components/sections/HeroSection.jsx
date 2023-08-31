@@ -3,7 +3,6 @@ import {
   AvatarBox,
   BoxWrapper,
   ButtonBox,
-  CircleBoxOne,
 } from './styles.sections';
 import { Box, Grid, useMediaQuery } from '@mui/material';
 import { Controls } from '../controls';
@@ -67,7 +66,7 @@ const HeroSection = () => {
               }}
               alt="profile img"
             />
-            {!isSmallScreen && <CircleBoxOne></CircleBoxOne>}
+            {/* {!isSmallScreen && <CircleBoxOne></CircleBoxOne>} */}
           </AvatarBox>
         </Grid>
       </Grid>

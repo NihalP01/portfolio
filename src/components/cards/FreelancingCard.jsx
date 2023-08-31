@@ -4,7 +4,7 @@ import { Controls } from '../controls';
 import { ButtonBox } from '../sections/styles.sections';
 
 const FreelancingCard = (props) => {
-  const { title, subTitle } = props;
+  const { title, subTitle, link } = props;
   return (
     <BoxWrapper
       cardpadding={'1rem'}
@@ -27,7 +27,11 @@ const FreelancingCard = (props) => {
         text={subTitle}
       />
       <ButtonBox margintop="1.5rem">
-        <Controls.BaseButton btnPadding="0.2rem" text="Visit" />
+        <Controls.BaseButton
+          onClick={() => window.open(link, '_blank')}
+          btnPadding="0.2rem"
+          text="Visit"
+        />
       </ButtonBox>
     </BoxWrapper>
   );

@@ -32,6 +32,7 @@ const FreelancingSection = () => {
             <Cards.FreelancingCard
               title={item.title}
               subTitle={item.subTitle}
+              link={item.link}
             />
           </Grid>
         ))}
