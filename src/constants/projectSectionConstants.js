@@ -7,6 +7,8 @@ export const cardData = [
     imgUrl: `${process.env.PUBLIC_URL}/assets/images/empAttendance.png`,
     hasPreview: true,
     shadowColor: '#ffb2b2',
+    source: 'https://github.com/NihalP01/employee-management',
+    live: 'https://sigmasteel-employee-management.netlify.app',
     techStack: [
       {
         id: 0,
@@ -29,6 +31,7 @@ export const cardData = [
     imgUrl: `${process.env.PUBLIC_URL}/assets/images/empAttendance.png`,
     hasPreview: false,
     shadowColor: '#f3b2ff',
+    source: '',
     techStack: [
       {
         id: 0,
@@ -47,6 +50,8 @@ export const cardData = [
     imgUrl: `${process.env.PUBLIC_URL}/assets/images/empAttendance.png`,
     hasPreview: true,
     shadowColor: '#b2ffc3',
+    source: '',
+    live: '',
     techStack: [
       {
         id: 0,
@@ -65,10 +70,13 @@ export const cardData = [
   {
     id: 3,
     title: 'Weather',
-    subTitle: 'Weather web application in React and tailwind css',
+    subTitle:
+      'Weather web application in React and css. I have used redux for state management',
     imgUrl: `${process.env.PUBLIC_URL}/assets/images/empAttendance.png`,
     hasPreview: true,
     shadowColor: '#fffda6',
+    source: 'https://github.com/NihalP01/weather',
+    live: 'http://weather-nihal.netlify.app/',
     techStack: [
       {
         id: 0,
@@ -96,6 +104,9 @@ export const cardData = [
     imgUrl: `${process.env.PUBLIC_URL}/assets/images/empAttendance.png`,
     hasPreview: true,
     shadowColor: '#fffda6',
+    source:
+      'https://github.com/NihalP01/Daily-basis-attendance-system',
+    live: 'https://mpl95j-3000.csb.app/',
     techStack: [
       {
         id: 0,

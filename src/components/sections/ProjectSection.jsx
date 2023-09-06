@@ -22,7 +22,7 @@ const ProjectSection = () => {
       <Components.HorizontalDivider
         margin={isSmallScreen ? '0.5 0 0 0' : ''}
         width={isSmallScreen ? '50px' : '80px'}
-        linecolor='linear-gradient(45deg, #00ff66, transparent)'
+        linecolor="linear-gradient(45deg, #00ff66, transparent)"
       />
       <Grid container spacing={3} mt={2}>
         {cardData.map((item) => (
@@ -33,6 +33,8 @@ const ProjectSection = () => {
               imgUrl={item.imgUrl}
               hasPreview={item.hasPreview}
               shadowColor={item.shadowColor}
+              sourceLink={item.source}
+              liveLink={item.live}
               // chipLabel={item.techStack}
             />
           </Grid>
