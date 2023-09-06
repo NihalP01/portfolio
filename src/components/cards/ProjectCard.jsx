@@ -11,9 +11,17 @@ const ProjectCard = (props) => {
     imgUrl,
     hasPreview,
     shadowColor,
+    liveLink,
+    sourceLink,
     // chipLabel,
   } = props;
   const isSmallScreen = useMediaQuery('(max-width: 768px)');
+
+
+  const handleClick = (link) => {
+    window.open(link, '_blank')
+  }
+
   return (
     <BoxWrapper
       height={isSmallScreen ? 'auto' : '440px'}
@@ -59,6 +67,7 @@ const ProjectCard = (props) => {
             <Controls.BaseButton
               btnPadding="0.7rem"
               text="Live preview"
+              onClick={() => handleClick(liveLink)}
             />
           </Grid>
         )}
@@ -67,6 +76,7 @@ const ProjectCard = (props) => {
           <Controls.BaseButton
             btnPadding="0.7rem"
             text="Source code"
+            onClick={() => handleClick(sourceLink)}
           />
         </Grid>
       </Grid>
