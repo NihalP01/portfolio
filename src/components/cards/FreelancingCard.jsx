@@ -9,6 +9,7 @@ const FreelancingCard = (props) => {
     <BoxWrapper
       cardpadding={'1rem'}
       sx={{
+        height: '250px',
         border: '1px solid #9fffb2',
         boxShadow: '4px 4px 6px 2px #000000',
       }}
@@ -26,7 +27,10 @@ const FreelancingCard = (props) => {
         lineHeight={'1.2rem'}
         text={subTitle}
       />
-      <ButtonBox margintop="1.5rem">
+      <ButtonBox margintop="1.5rem" sx={{
+          position: 'absolute',
+          bottom: '1rem',
+        }}>
         <Controls.BaseButton
           onClick={() => window.open(link, '_blank')}
           btnPadding="0.2rem"

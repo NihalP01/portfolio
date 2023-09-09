@@ -31,7 +31,7 @@ export const cardData = [
     imgUrl: `${process.env.PUBLIC_URL}/assets/images/empAttendance.png`,
     hasPreview: false,
     shadowColor: '#f3b2ff',
-    source: '',
+    source: 'https://github.com/NihalP01/Currency-Converter',
     techStack: [
       {
         id: 0,
@@ -50,8 +50,8 @@ export const cardData = [
     imgUrl: `${process.env.PUBLIC_URL}/assets/images/empAttendance.png`,
     hasPreview: true,
     shadowColor: '#b2ffc3',
-    source: '',
-    live: '',
+    source: 'https://github.com/NihalP01/portfolio',
+    live: 'http://nihalp01.netlify.app/',
     techStack: [
       {
         id: 0,
