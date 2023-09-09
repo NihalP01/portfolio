@@ -24,7 +24,7 @@ const ProjectCard = (props) => {
 
   return (
     <BoxWrapper
-      height={isSmallScreen ? 'auto' : '500px'}
+      height={isSmallScreen ? 'auto' : '420px'}
       sx={{ boxShadow: `0px 0px 6px 0px ${shadowColor}` }}
     >
       <Box sx={{ display: 'flex', justifyContent: 'center' }}>

@@ -2,7 +2,10 @@ import React from 'react';
 import { BoxWrapper } from './footer.styles';
 import { Controls } from '../controls';
 import { Box, Grid, useMediaQuery } from '@mui/material';
-import { socialIcons } from '../../constants/footerConstants';
+import {
+  footerContent,
+  socialIcons,
+} from '../../constants/footerConstants';
 
 const Footer = () => {
   const isSmallScreen = useMediaQuery('(max-width: 768px)');
@@ -21,7 +24,7 @@ const Footer = () => {
           <Controls.BaseTypography
             fontSize={'1.1rem'}
             fontWeight={600}
-            text="Feel free to contact me"
+            text={footerContent.footerText}
             textAlign={mobileScreen ? 'center' : 'start'}
           />
         </Grid>
@@ -35,7 +38,11 @@ const Footer = () => {
                   : 'end'
                 : 'center'
             }
-            text="nihalburagohain02@gmail.com"
+            sx={{ cursor: 'pointer' }}
+            onClick={() =>
+              (window.location.href = `mailto:${footerContent.mail}`)
+            }
+            text={footerContent.mail}
           />
         </Grid>
         <Grid
@@ -63,7 +70,7 @@ const Footer = () => {
         textAlign="center"
         fontSize="0.8rem"
         fontWeight={600}
-        text={`© ${year} Nihal Buragohain `}
+        text={`© ${year} ${footerContent.name}`}
       />
     </BoxWrapper>
   );

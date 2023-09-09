@@ -22,3 +22,9 @@ export const socialIcons = [
     link: 'https://www.instagram.com/nihalp01/',
   },
 ];
+
+export const footerContent = {
+  footerText: 'Feel free to contact me',
+  mail: 'nihalburagohain02@gmail.com',
+  name: 'Nihal Buragohain',
+};

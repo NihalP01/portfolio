@@ -1,7 +1,7 @@
 export const cardData = [
   {
     id: 0,
-    title: 'Employee Management System',
+    title: 'Employee Management System (Desktop only)',
     subTitle:
       'Employee management system with attendance tracker for daily based attendance. Automatic salary calculation according to daily attendance records.',
     imgUrl: `${process.env.PUBLIC_URL}/assets/images/empAttendance.png`,
@@ -28,7 +28,7 @@ export const cardData = [
     id: 1,
     title: 'Online Currency converter',
     subTitle: 'Online currency converter with precious metal prices',
-    imgUrl: `${process.env.PUBLIC_URL}/assets/images/empAttendance.png`,
+    imgUrl: `${process.env.PUBLIC_URL}/assets/images/currency.webp`,
     hasPreview: false,
     shadowColor: '#f3b2ff',
     source: 'https://github.com/NihalP01/Currency-Converter',
@@ -47,7 +47,7 @@ export const cardData = [
     id: 2,
     title: 'Portfolio',
     subTitle: 'My personal portfolio in React',
-    imgUrl: `${process.env.PUBLIC_URL}/assets/images/empAttendance.png`,
+    imgUrl: `${process.env.PUBLIC_URL}/assets/images/portfolio.webp`,
     hasPreview: true,
     shadowColor: '#b2ffc3',
     source: 'https://github.com/NihalP01/portfolio',
@@ -72,7 +72,7 @@ export const cardData = [
     title: 'Weather',
     subTitle:
       'Weather web application in React and css. I have used redux for state management',
-    imgUrl: `${process.env.PUBLIC_URL}/assets/images/empAttendance.png`,
+    imgUrl: `${process.env.PUBLIC_URL}/assets/images/weather.webp`,
     hasPreview: true,
     shadowColor: '#fffda6',
     source: 'https://github.com/NihalP01/weather',
@@ -101,7 +101,7 @@ export const cardData = [
     title: 'Daily based attendance system',
     subTitle:
       'Application to show the implementation of daily based attendance system for employees',
-    imgUrl: `${process.env.PUBLIC_URL}/assets/images/empAttendance.png`,
+    imgUrl: `${process.env.PUBLIC_URL}/assets/images/attendance.webp`,
     hasPreview: true,
     shadowColor: '#fffda6',
     source:
