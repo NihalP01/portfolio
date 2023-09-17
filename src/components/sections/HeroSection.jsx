@@ -1,9 +1,5 @@
 import React from 'react';
-import {
-  AvatarBox,
-  BoxWrapper,
-  ButtonBox,
-} from './styles.sections';
+import { AvatarBox, BoxWrapper, ButtonBox } from './styles.sections';
 import { Box, Grid, useMediaQuery } from '@mui/material';
 import { Controls } from '../controls';
 import { heroConstants } from '../../constants/heroConstants';
@@ -11,8 +7,18 @@ import { heroConstants } from '../../constants/heroConstants';
 const HeroSection = () => {
   const isSmallScreen = useMediaQuery('(max-width: 1024px)');
 
+  const handleDownload = () => {
+    const pdfUrl = `${process.env.PUBLIC_URL}/assets/files/resume.pdf`;
+    const a = document.createElement('a');
+    a.href = pdfUrl;
+    a.download = 'resume.pdf';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  };
+
   return (
-    <BoxWrapper id='0'>
+    <BoxWrapper id="0">
       <Grid
         container
         sx={{ display: 'flex', justifyContent: 'center' }}
@@ -50,7 +56,10 @@ const HeroSection = () => {
             />
           </Box>
           <ButtonBox>
-            <Controls.BaseButton text={heroConstants.buttonText} />
+            <Controls.BaseButton
+              onClick={handleDownload}
+              text={heroConstants.buttonText}
+            />
           </ButtonBox>
         </Grid>
         <Grid item xs={12} lg={4} order={{ xs: 1, lg: 2 }}>
@@ -58,6 +67,7 @@ const HeroSection = () => {
             <img
               src={`${process.env.PUBLIC_URL}/assets/images/profile.jpg`}
               height={isSmallScreen ? 200 : 300}
+              width={isSmallScreen ? 200 : 300}
               style={{
                 boxShadow: '2px 3px 20px 5px black',
                 borderRadius: '10rem',
