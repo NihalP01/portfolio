@@ -2,19 +2,19 @@ export const freelancingData = [
   {
     id: 0,
     title: 'Wanderides',
-    subTitle: 'This is the description',
+    subTitle: 'Car leasing service in Guwahati, Assam',
     link: 'http://wanderides.com/',
   },
   {
     id: 1,
     title: 'Andwemet',
-    subTitle: 'This is the description',
+    subTitle: 'Andwemet is an Indian matchmaking service',
     link: 'https://www.andwemet.com/',
   },
   {
     id: 2,
     title: 'BillOk',
-    subTitle: 'This is the description',
+    subTitle: 'Invoice management system',
     link: 'https://billok.co/',
   },
 ];
