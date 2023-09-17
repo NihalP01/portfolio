@@ -2,19 +2,19 @@ export const freelancingData = [
   {
     id: 0,
     title: 'Wanderides',
-    subTitle: 'Crafted the entire frontend using React, Material UI for seamless user experiences also used Redux for state management.',
+    subTitle: 'Car leasing service in Guwahati, Assam',
     link: 'http://wanderides.com/',
   },
   {
     id: 1,
     title: 'Andwemet',
-    subTitle: 'Played a pivotal role in revamping the webpage, leveraging React and MUI to enhance the matchmaking experience.',
+    subTitle: 'Andwemet is an Indian matchmaking service',
     link: 'https://www.andwemet.com/',
   },
   {
     id: 2,
     title: 'BillOk',
-    subTitle: 'Contributed by designing intuitive UI elements for an efficient online invoice management system.',
+    subTitle: 'Invoice management system',
     link: 'https://billok.co/',
   },
 ];
