@@ -35,7 +35,7 @@ const ProjectSection = () => {
               shadowColor={item.shadowColor}
               sourceLink={item.source}
               liveLink={item.live}
-              // chipLabel={item.techStack}
+              chipLabel={item.techStack}
             />
           </Grid>
         ))}

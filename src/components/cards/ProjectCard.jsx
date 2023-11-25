@@ -2,6 +2,7 @@ import React from 'react';
 import { Controls } from '../controls';
 import { Box, Grid, useMediaQuery } from '@mui/material';
 import { BoxWrapper } from './cards.styles';
+import { Components } from '..';
 // import { Components } from '..';
 
 const ProjectCard = (props) => {
@@ -13,26 +14,26 @@ const ProjectCard = (props) => {
     shadowColor,
     liveLink,
     sourceLink,
-    // chipLabel,
+    chipLabel,
   } = props;
   const isSmallScreen = useMediaQuery('(max-width: 768px)');
 
-
   const handleClick = (link) => {
-    window.open(link, '_blank')
-  }
+    window.open(link, '_blank');
+  };
 
   return (
     <BoxWrapper
-      height={isSmallScreen ? 'auto' : '420px'}
+      height={isSmallScreen ? 'auto' : '480px'}
       sx={{ boxShadow: `0px 0px 6px 0px ${shadowColor}` }}
     >
       <Box sx={{ display: 'flex', justifyContent: 'center' }}>
         <img
           src={imgUrl}
           width={'100%'}
-          height={'auto'}
+          height={'160px'}
           alt="project interface"
+          style={{ objectFit: 'cover' }}
         />
       </Box>
       <Controls.BaseTypography
@@ -48,11 +49,14 @@ const ProjectCard = (props) => {
         lineHeight={'1.2rem'}
         text={subTitle}
       />
-      {/* <Box mt={2} display={'flex'}>
-        {chipLabel.map((item) => (
-          <Components.BaseChip key={item.id} label={item.label} />
-        ))}
-      </Box> */}
+      {!isSmallScreen && (
+        <Box mt={2} display={'flex'} gap={1}>
+          {chipLabel.map((item) => (
+            <Components.BaseChip key={item.id} label={item.label} />
+          ))}
+        </Box>
+      )}
+
       <Grid
         container
         spacing={1}
@@ -76,6 +80,7 @@ const ProjectCard = (props) => {
           <Controls.BaseButton
             btnPadding="0.7rem"
             text="Source code"
+            secondary
             onClick={() => handleClick(sourceLink)}
           />
         </Grid>
