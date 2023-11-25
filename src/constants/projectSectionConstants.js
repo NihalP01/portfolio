@@ -104,8 +104,7 @@ export const cardData = [
     imgUrl: `${process.env.PUBLIC_URL}/assets/images/attendance.webp`,
     hasPreview: true,
     shadowColor: '#fffda6',
-    source:
-      'https://github.com/NihalP01/Daily-basis-attendance-system',
+    source: 'https://github.com/NihalP01/Daily-basis-attendance-system',
     live: 'https://mpl95j-3000.csb.app/',
     techStack: [
       {
@@ -117,5 +116,15 @@ export const cardData = [
         label: 'JavaScript',
       },
     ],
+  },
+  {
+    id: 5,
+    title: 'Frontend Mentor Challenges',
+    subTitle:
+      'Couple of real-world web developmet challenges, sharpening my HTML, CSS, and JavaScript skills',
+    hasPreview: true,
+    source:
+      'https://github.com/NihalP01?tab=repositories&q=frontend-mentor-challenge&type=&language=&sort=',
+    live: 'https://www.frontendmentor.io/profile/NihalP01',
   },
 ];

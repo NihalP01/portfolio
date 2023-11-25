@@ -4,5 +4,5 @@ export const CustomButton = styled(Button)(({ padding }) => ({
   padding: padding ? padding : '1rem',
   textTransform: 'none',
   borderRadius: '2rem',
-  fontWeight: 600
+  fontWeight: 600,
 }));

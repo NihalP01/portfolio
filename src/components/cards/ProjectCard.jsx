@@ -17,10 +17,9 @@ const ProjectCard = (props) => {
   } = props;
   const isSmallScreen = useMediaQuery('(max-width: 768px)');
 
-
   const handleClick = (link) => {
-    window.open(link, '_blank')
-  }
+    window.open(link, '_blank');
+  };
 
   return (
     <BoxWrapper
@@ -76,6 +75,7 @@ const ProjectCard = (props) => {
           <Controls.BaseButton
             btnPadding="0.7rem"
             text="Source code"
+            secondary
             onClick={() => handleClick(sourceLink)}
           />
         </Grid>
