@@ -52,13 +52,13 @@ const Footer = () => {
           md={4}
           display={'flex'}
           justifyContent={isSmallScreen ? 'center' : 'end'}
+          gap={1}
         >
           {socialIcons.map((item) => (
             <Box
               key={item.id}
               onClick={() => window.open(item.link, '_blank')}
               sx={{ cursor: 'pointer' }}
-              width={'40px'}
             >
               <item.icon fontSize={'1.5rem'} />
             </Box>
